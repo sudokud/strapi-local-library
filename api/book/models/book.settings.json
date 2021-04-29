@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "name": "book",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "ISBN": {
+      "type": "string"
+    },
+    "author": {
+      "via": "books",
+      "model": "author"
+    },
+    "genres": {
+      "via": "books",
+      "collection": "genre"
+    },
+    "bookinstances": {
+      "via": "book",
+      "collection": "bookinstance"
+    }
+  }
+}

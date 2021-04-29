@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookinstances",
+  "info": {
+    "name": "bookinstance"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Available",
+        "Maintenance",
+        "Loaned",
+        "Reserved"
+      ],
+      "default": "Maintenance"
+    },
+    "imprint": {
+      "type": "string"
+    },
+    "due_back": {
+      "type": "datetime"
+    },
+    "book": {
+      "model": "book",
+      "via": "bookinstances"
+    }
+  }
+}

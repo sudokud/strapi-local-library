@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genres",
+  "info": {
+    "name": "genre"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "books": {
+      "collection": "book",
+      "via": "genres",
+      "dominant": true
+    }
+  }
+}

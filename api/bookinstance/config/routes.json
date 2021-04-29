@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bookinstances",
+      "handler": "bookinstance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bookinstances/count",
+      "handler": "bookinstance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bookinstances/:id",
+      "handler": "bookinstance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bookinstances",
+      "handler": "bookinstance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bookinstances/:id",
+      "handler": "bookinstance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bookinstances/:id",
+      "handler": "bookinstance.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

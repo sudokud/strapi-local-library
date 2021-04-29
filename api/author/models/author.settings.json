@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "name": "author",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "family_name": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "datetime"
+    },
+    "date_of_death": {
+      "type": "datetime"
+    },
+    "lifespan": {
+      "type": "string"
+    },
+    "books": {
+      "collection": "book",
+      "via": "author"
+    }
+  }
+}
