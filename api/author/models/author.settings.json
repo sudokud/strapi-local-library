@@ -23,9 +23,6 @@
     "date_of_death": {
       "type": "datetime"
     },
-    "lifespan": {
-      "type": "string"
-    },
     "books": {
       "collection": "book",
       "via": "author"
