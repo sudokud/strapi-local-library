@@ -11,18 +11,20 @@ module.exports = {
    */
 
   async delete(ctx) {
+    //get the id from the request
     const { id } = ctx.params;
-      //if book has more then one instance 
-      // we prevent user from deleting the book
-      // and return 406 not acceptable
-      let entity = await strapi.services.genre.find({ id });
-      if(entity[0].books.length > 0) {
-         return ctx.send({
-            message: "you can't delete a genre that contain one or more books "
-        }, 406);
-      }
-      //else delete the book
-      entity = await strapi.services.genre.delete({ id });
-      return sanitizeEntity(entity, { model: strapi.models.genre });
+    //find the genre that matches the id
+    let entity = await strapi.services.genre.find({ id });
+    // check if genre's books field (array) is not empty
+    //if not return 406
+    if(entity[0].books.length > 0) {
+      return ctx.send({
+      message: "genre has books!"
+      }, 406);
+    }
+    // else genre has no books
+    // delete genre
+    entity = await strapi.services.genre.delete({ id });
+    return sanitizeEntity(entity, { model: strapi.models.genre });
   },
 };

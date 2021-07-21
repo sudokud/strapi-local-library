@@ -38,8 +38,8 @@ module.exports = {
     const { ISBN } = ctx.request.body
     entity = await strapi.services.book.findOne({ ISBN });
     if (entity){
-        return ctx.send({
-          message: 'book alredy existe'
+      return ctx.send({
+        message: 'book alredy existe'
       }, 406);
     }
     if (ctx.is('multipart')) {
