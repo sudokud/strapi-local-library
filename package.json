@@ -1,8 +1,8 @@
 {
   "name": "strapi-local-library",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "0.1.1",
+  "description": "a rebuild of the MDN express.js local library tutorial",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,19 +11,19 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "strapi": "3.6.1",
-    "strapi-admin": "3.6.1",
-    "strapi-utils": "3.6.1",
-    "strapi-plugin-content-type-builder": "3.6.1",
-    "strapi-plugin-content-manager": "3.6.1",
-    "strapi-plugin-users-permissions": "3.6.1",
-    "strapi-plugin-email": "3.6.1",
-    "strapi-plugin-upload": "3.6.1",
-    "strapi-plugin-i18n": "3.6.1",
-    "strapi-connector-mongoose": "3.6.1"
+    "strapi": "3.6.5",
+    "strapi-admin": "3.6.5",
+    "strapi-utils": "3.6.5",
+    "strapi-plugin-content-type-builder": "3.6.5",
+    "strapi-plugin-content-manager": "3.6.5",
+    "strapi-plugin-users-permissions": "3.6.5",
+    "strapi-plugin-email": "3.6.5",
+    "strapi-plugin-upload": "3.6.5",
+    "strapi-plugin-i18n": "3.6.5",
+    "strapi-connector-mongoose": "3.6.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "chetoui hamza"
   },
   "strapi": {
     "uuid": "541e1bfa-fa42-4a52-9e45-9e33c73aa56e"
