@@ -1,0 +1,30 @@
+{
+  "name": "strapi-local-library",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "^4.0.2",
+    "@strapi/plugin-users-permissions": "^4.0.2",
+    "@strapi/strapi": "^4.0.2",
+    "pg": "8.6.0"
+  },
+  "author": {
+    "name": "chetoui hamza"
+  },
+  "strapi": {
+    "uuid": "f151e17d-72b2-4676-a852-a10db56e0a5f"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
